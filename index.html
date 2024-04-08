@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Programmer/Software Developer</p>
+                <h1>Hi, I'm Akash<br> Karki a CMPG Student.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="akash.png">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title" >About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur 
+                        adipisicing elit. A aperiam reiciendis vero 
+                        consequuntur, doloribus pariatur nisi 
+                        reprehenderit! Pariatur in doloremque vitae 
+                        asperiores, consequuntur numquam obcaecati 
+                        recusandae quaerat nisi, omnis eos. Lorem ipsum 
+                        dolor sit amet, consectetur adipisicing elit. 
+                        Laboriosam pariatur aliquam nemo quaerat deleniti 
+                        est quas voluptate repudiandae quis, quo corporis, 
+                        ab ipsum commodi dolorem quos harum maxime ipsa 
+                        sunt!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Educaton</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2009-2019</span><br>Completion Of School Level</li>
+                            <li><span>2020-2023</span><br>High School Degree</li>
+                            <li><span>2024-Present</span><br>Diploma In Computer Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h1>Fill Out this form to Contact.</h1>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2" onclick="showAlert()">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
